@@ -1,9 +1,14 @@
-.otp-container{
+/* .otp-container{
   @apply flex justify-between gap-2
-}
+} */
 
-.otp-container input{
-  @apply !mr-0 flex-1 py-5 outline-none
+.otp-container > input{
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto
 }
 
 .react-tel-input .form-control{
