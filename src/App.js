@@ -45,6 +45,7 @@ function App() {
     }).catch((error) => {
       console.log(error);
       setLoading(false);
+      toast.error(error.message);
     });
 
   }
@@ -57,7 +58,7 @@ function App() {
       setLoading(false);
     }).catch((err) => {
       setLoading(false);
-      toast.error('Incorrect OTP..!');
+      toast.error(err.message)
       console.log(err);
     })
   }
