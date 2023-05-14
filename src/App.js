@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import OtpInput from 'otp-input-react'
-import {CgSpinner} from 'react-icons/cg'
-import PhoneInput from 'react-phone-input-2';
 import "react-phone-input-2/lib/style.css"
 import {auth} from './firebase.config.js'
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
@@ -18,8 +15,6 @@ function App() {
   const [phone, setPhone] = useState('')
   const [showOtp, setShowOtp] = useState(false);
   const [user, setUser] = useState(null);
-  const [correctOtp, setCorrectOtp] = useState(true)
-
 
   const onCaptchVertify = () => {
     if(!window.recaptchaVerifier){

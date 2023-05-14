@@ -27,8 +27,6 @@ const Card = ({inputContent, setInputContent, onSignup, loading, type, onOtpVeri
 						className="otp-container"
 					/>
 				) }
-
-				
 				
 				<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 my-5">An OTP will be send to your mobile number via SMS. Use it to verify your identity</p>
 
